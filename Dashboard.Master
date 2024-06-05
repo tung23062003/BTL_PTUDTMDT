@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.master.cs" Inherits="BTL_PTUDTMDT.Dashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="tittle" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="page">
+            <section id="sidebar">
+                <ul>
+                    <li class="sidebar_item"><a href="category.aspx">Category</a></li>
+                    <li class="sidebar_item"><a href="product.aspx">Product</a></li>
+                    <li class="sidebar_item"><a href="customer.aspx">Customer</a></li>
+                    <li class="sidebar_item"><a href="thongke.aspx">Thong Ke</a></li>
+                </ul>
+            </section>
+
+            <section id="container">
+                <div class="navbar"></div>
+                <div class="content">
+                    <asp:ContentPlaceHolder ID="content" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </section>
+        </div>
+    </form>
+</body>
+</html>
